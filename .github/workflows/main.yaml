@@ -1,0 +1,24 @@
+name: main
+on:
+  push:
+    branches:
+    - main
+    tags:
+    - "*"
+  pull_request:
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        set-safe-directory: true
+        fetch-depth: 0
+    - uses: actions/setup-python@v5
+    - uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+    - uses: pre-commit/action@v3.0.1
