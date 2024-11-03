@@ -1,6 +1,6 @@
-# Contributing to Mod Installer
+# Contributing to Mod Packager
 
-First off, thank you for considering contributing to Mod Installer. It's people like you that make Mod Installer such a great tool.
+First off, thank you for considering contributing to Mod Packager. It's people like you that make Mod Installer such a great tool.
 
 ## Code of Conduct
 
@@ -29,7 +29,7 @@ This section guides you through submitting an enhancement suggestion for Mod Ins
 - Fill in the required template
 - Do not include issue numbers in the PR title
 - Include screenshots and animated GIFs in your pull request whenever possible.
-- Follow the Rust styleguides.
+- Follow the styleguides.
 - Include thoughtfully-worded, well-structured tests.
 - Document new code based on the Documentation Styleguide
 - End all files with a newline
