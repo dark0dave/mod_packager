@@ -111,7 +111,7 @@ parse_args() {
         esac
         ;;
       w|weidu-version)
-        weidu}_version="${OPTARG,,}";;
+        weidu_version="${OPTARG,,}";;
       t|tiz-folder)
         tispack_folder="${OPTARG}";;
       i|ico-folder)
